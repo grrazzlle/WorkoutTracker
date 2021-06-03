@@ -6,6 +6,7 @@
   ## Description
 
   This application allows you to track your workouts and see the results displayed in a chart
+  
   Click [here](https://calm-inlet-57146.herokuapp.com/) to try out the application
 
   ## Table of contents

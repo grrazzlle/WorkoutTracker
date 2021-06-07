@@ -1,13 +1,13 @@
 // get all workout data from back-end
 
 fetch('/api/workouts/range')
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      console.log(data);
-      populateChart(data);
-    });
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+    populateChart(data);
+  });
 
 
 API.getWorkoutsInRange();
@@ -48,15 +48,7 @@ function populateChart(data) {
   const lineChart = new Chart(line, {
     type: 'line',
     data: {
-      labels: [
-        'Sunday',
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday',
-      ],
+      labels: array.map(x => x.exercises[0].name),
       datasets: [
         {
           label: 'Workout Duration In Minutes',

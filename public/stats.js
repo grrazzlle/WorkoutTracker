@@ -47,15 +47,7 @@ function populateChart(data) {
   const lineChart = new Chart(line, {
     type: 'line',
     data: {
-      labels: [
-        'Sunday',
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday',
-      ],
+      labels: data.map(x => x.exercises[0].name),
       datasets: [
         {
           label: 'Workout Duration In Minutes',
@@ -95,15 +87,7 @@ function populateChart(data) {
   const barChart = new Chart(bar, {
     type: 'bar',
     data: {
-      labels: [
-        'Sunday',
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday',
-      ],
+      labels: data.map(x => x.exercises[0].name),
       datasets: [
         {
           label: 'Pounds',

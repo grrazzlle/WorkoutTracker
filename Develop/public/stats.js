@@ -5,6 +5,7 @@ fetch('/api/workouts/range')
       return response.json();
     })
     .then((data) => {
+      console.log(data);
       populateChart(data);
     });
 
@@ -141,26 +142,6 @@ function populateChart(data) {
             },
           },
         ],
-      },
-    },
-  });
-
-  const pieChart = new Chart(pie, {
-    type: 'pie',
-    data: {
-      labels: workouts,
-      datasets: [
-        {
-          label: 'Excercises Performed',
-          backgroundColor: colors,
-          data: durations,
-        },
-      ],
-    },
-    options: {
-      title: {
-        display: true,
-        text: 'Excercises Performed',
       },
     },
   });

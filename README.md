@@ -5,7 +5,7 @@
 
   ## Description
 
-  This application allows you to track your workouts and see the results displayed in a chart
+  This application allows users to view, create and track daily workouts. Users can log multiple exercises and track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, the app tracks the distance traveled.
   
   Click [here](https://calm-inlet-57146.herokuapp.com/) to try out the application
 
@@ -21,7 +21,7 @@
 
   ## Installation
 
-  
+  Run npm install, and then node server.js
 
   ## Usage
 
@@ -32,13 +32,13 @@
   None 
   Find licence info [here](https://choosealicense.com/)
 
-  ## Contributoring
+  ## Contributing
 
   Self
 
   ## Tests
 
-  None
+  test
 
   ## Github
 
